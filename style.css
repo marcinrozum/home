@@ -1,0 +1,59 @@
+body{
+    padding:0px;
+    margin: 0px;
+    font-family: Verdana;
+}
+.bg {
+  /* The image used */
+  background-image: url("files/backgroundphoto.jpg");
+
+  /* Half height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main{
+  min-width: 1366px;
+  width: 1366px;
+  height: 100%;
+  background-image: url(files/backgroundphoto.jpg);
+  background-position:center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+navbar navbar-expand-lg navbar-light bg-light{
+    border-width: 0px;
+    -webkit-box-shadow: 0px 0px;
+    box-shadow: 0px 0px;
+    background-color: rgba(0,0,0,0.0);
+    background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(0,0,0,0.00)),color-stop( 100% , rgba(0,0,0,0.00)));
+    background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+    background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif
+}
+.navbar-nav{
+  margin-left: -150px;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+  color: grey;
+}
+.navbar-light .navbar-nav .nav-link.active{
+    color: #F24259 !important;
+}
+.navbar-light .navbar-nav .nav-link:active{
+    color: #F24259 !important;
+}
+.logo{
+  top:0;
+  left: 0;
+  margin-top: -30px;
+}
