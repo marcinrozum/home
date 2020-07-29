@@ -15,6 +15,48 @@ body{
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+@-webkit-keyframes fadeInLeft {
+            0% {
+               opacity: 0;
+               -webkit-transform: translateX(-800px);
+            }
+            100% {
+               opacity: 1;
+               -webkit-transform: translateX(0);
+            }
+         }
+
+         @keyframes fadeInLeft {
+            0% {
+               opacity: 0;
+               transform: translateX(-800px);
+            }
+            100% {
+               opacity: 1;
+               transform: translateX(0);
+            }
+         }
+         @-webkit-keyframes fadeInRight {
+                     0% {
+                        opacity: 0;
+                        -webkit-transform: translateX(800px);
+                     }
+                     100% {
+                        opacity: 1;
+                        -webkit-transform: translateX(0);
+                     }
+                  }
+
+                  @keyframes fadeInRight {
+                     0% {
+                        opacity: 0;
+                        transform: translateX(800px);
+                     }
+                     100% {
+                        opacity: 1;
+                        transform: translateX(0);
+                     }
+                  }
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -271,16 +313,19 @@ navbar navbar-expand-lg navbar-light bg-light{
     .timeline:before {
         left: 0.9%;
     }
+    .timeline .date-info{
+      left: 45%
+    }
     .timeline > li > .timeline-badge {
         left: 2.2%;
     }
     .timeline > li > .timeline-panel{
         width: 94%;
+        margin-top: 30px;
     }
     .timeline > li.timeline-inverted > .timeline-panel {
         float: right;
     }
-
     .timeline > li.timeline-inverted > .timeline-panel:before {
         border-left-width: 0;
         border-right-width: 10px;
@@ -299,6 +344,10 @@ navbar navbar-expand-lg navbar-light bg-light{
         left: 90%;
         margin-left: -24px;
         width: auto;
+        justify-content: center;
+    }
+    .timeline-inverted .date-info{
+            left: 35%;
     }
     .date-info .day {
         font-size: 12px;
@@ -368,6 +417,7 @@ navbar navbar-expand-lg navbar-light bg-light{
 
 #section10 a {
   padding-top: 60px;
+  margin-left: -35px;
 }
 #section10 a span {
   position: absolute;
@@ -425,4 +475,18 @@ navbar navbar-expand-lg navbar-light bg-light{
   100% {
     opacity: 0;
   }
+}
+.fadeleft{
+  animation-name: fadeInLeft;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-duration: 3s;
+  animation-fill-mode:forwards;
+}
+.faderight{
+  animation-name: fadeInRight;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-duration: 3s;
+  animation-fill-mode:forwards;
 }
