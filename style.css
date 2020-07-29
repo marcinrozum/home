@@ -308,6 +308,9 @@ navbar navbar-expand-lg navbar-light bg-light{
 .date-info .day{
         font-size: 18px;
 }
+.techlogo{
+  filter: grayscale(100%);
+}
 @media (max-width: 768px) {
 
     .timeline:before {
