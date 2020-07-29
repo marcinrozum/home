@@ -7,7 +7,31 @@
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
       <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@300&family=Raleway&display=swap" rel="stylesheet">
       <link rel="stylesheet" type="text/css" href="style.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="js/jquery.scrollTo.min.js"></script>
+      <script>
+        $(function() {
+  $('a[href*=#]').on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+  });
+});
+      </script>
+      <script>
+          jQuery(function($){
+              $.scrollTo(0);
+
+            $('#doswiadczenie').click(function(){
+              $.scrollTo($('#doswiadczenie1'), 600);
+            });
+            $('#scroll').click(function(){
+              $.scrollTo($('#scroll1'), 600);
+            });
+
+          });
+      </script>
       <script type="text/javascript">
+
    var TxtType = function(el, toRotate, period) {
         this.toRotate = toRotate;
         this.el = el;
@@ -76,23 +100,133 @@
     <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+          <a id="home" class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Doświadczenie</a>
+          <a id="doswiadczenie" class="nav-link" href="#">Doświadczenie</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Projekty</a>
+          <a id="projekty" class="nav-link" href="#">Projekty</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Kontakt</a>
+          <a id="kontakt" class="nav-link" href="#">Kontakt</a>
         </li>
       </ul>
     </div>
   </nav>
 
 <a href="" class="typewrite" data-period="2000" data-type='[ "Marcin Rozum", "Portfolio" ]'></a>
+<section id="section10" class="demo">
+  <a href="#thanks" id="scroll" ><span></span>Scroll</a>
+</section>
+      </section>
+      <a id="doswiadczenie1"></a>
+      <a id="scroll1"></a>
+      <section class="experience">
+      <section class="section-spacing text-center" id="features">
+         <div class="container">
+            <header class="section-header">
+              <br>
+              <a id="doswiadczenie1"></a>
+               <h2>Doświadczenie</h2>
+            </header>
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-md-12">
+                     <ul class="timeline">
+                        <li class="timeline wow bounceInUp">
+                           <div class="timeline-badge warning"><i class="fa fa-bullseye"></i></div>
+                           <div class="date-info">
+                              <span class="day"><b>Apr-Jun 2016</b></span><span class="month"></span><span class="year"></span>
+                           </div>
+                           <div class="timeline-panel">
+                              <div class="timeline-heading">
+                                 <h6 class="timeline-title">Informatyk Serwisant <b>Dekanex-Soft</b></h6>
+                              </div>
+                              <div class="timeline-body">
+                                 <p>
+                                   Praktykant w firmie Dekanex-Soft. Naprawa laptopów , komputerów. Instalacja systemów
+operacyjnych i programów. Wymiana podzespołów.
+                                 </p>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="timeline wow bounceInUp">
+                           <div class="timeline-badge warning"><i class="fa fa-bullseye"></i></div>
+                           <div class="date-info">
+                              <span class="day"><b>Jun-May 2019-2020</b></span><span class="month"></span><span class="year"></span>
+                           </div>
+                           <div class="timeline-panel">
+                              <div class="timeline-heading">
+                                 <h6 class="timeline-title">IT Systems Engineer <b>Bluevirt</b></h6>
+                              </div>
+                              <div class="timeline-body">
+                                 <p>
+                                   Wykonywanie prac nad systemami informatycznymi, które obejmują instalację sieci, konfigurację
+oprogramowania oraz stałą administrację i zarządzanie infrastrukturą IT.<br>
+<ul>
+  <li>Administracja wirtualizacją (np. VMware)</li>
+  <li>Opieka nad infrastrukturą komputerową</li>
+  <li>Zarządrzanie systemami Linux oraz Windows.</li>
+  <li>Wdrażanie kopi bezpieństwa (np. NAS Synology , Qnap ) oraz konfiguracja programów (np. Veeam ,
+  Cobian, VM Explorer)</li>
+  <li>Opieka nad infrastrukturą serwerową</li>
+  <li>Zarządrzanie systemami Linux oraz Windows.</li>
+  <li>Konfiguracja monitoringów sprzętowych (np. Nagios , Zabbix)</li>
+  <li>Administracja usługami (np .DNS , DHCP , VPN , FTP , Postfix)</li>
+  <li>Zarządrzanie Office365</li>
+</ul>
+                                 </p>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="timeline-inverted wow bounceInUp">
+                           <div class="timeline-badge danger"><i class="fa fa-crosshairs"></i></div>
+                           <div class="date-info" style="margin-left:7px;">
+                              <span class="day"><b>Nov-Present 2017</b></span><span class="month"></span><span class="year"></span>
 
+                           </div>
+                           <div class="timeline-panel">
+                              <div class="timeline-heading">
+                                 <h6 class="timeline-title">IT Systems Engineer <b>VIRTLINE Sp. z o.o.</b></h6>
+                              </div>
+                              <div class="timeline-body">
+                                 <p>
+                                   Wykonywanie prac nad systemami informatycznymi, które obejmują instalację sieci, konfigurację
+oprogramowania oraz stałą administrację i zarządzanie infrastrukturą IT.<br>
+<ul>
+  <li>Administracja wirtualizacją (np. VMware)</li>
+  <li>Opieka nad infrastrukturą komputerową</li>
+  <li>Zarządrzanie systemami Linux oraz Windows.</li>
+  <li>Wdrażanie kopi bezpieństwa (np. NAS Synology , Qnap ) oraz konfiguracja programów (np. Veeam ,
+  Cobian, VM Explorer)</li>
+  <li>Opieka nad infrastrukturą serwerową</li>
+  <li>Zarządrzanie systemami Linux oraz Windows.</li>
+  <li>Konfiguracja monitoringów sprzętowych (np. Nagios , Zabbix)</li>
+  <li>Administracja usługami (np .DNS , DHCP , VPN , FTP , Postfix)</li>
+  <li>Zarządrzanie Office365</li>
+</ul>
+                                 </p>
+                              </div>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      </section>
+      <section class="technology">
+      <section class="section-spacing text-center" id="features">
+         <div class="container">
+            <header class="section-header">
+              <br>
+              <a id="doswiadczenie1"></a>
+               <h2>Technologie</h2>
+
+            </header>
+      </section>
       </section>
   </body>
 </html>
