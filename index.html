@@ -10,6 +10,41 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script src="js/jquery.scrollTo.min.js"></script>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script>
+        function isElementInViewport(elem) {
+    var $elem = $(elem);
+
+    // Get the scroll position of the page.
+    var scrollElem = ((navigator.userAgent.toLowerCase().indexOf('webkit') != -1) ? 'body' : 'html');
+    var viewportTop = $(scrollElem).scrollTop();
+    var viewportBottom = viewportTop + $(window).height();
+
+    // Get the position of the element on the page.
+    var elemTop = Math.round( $elem.offset().top );
+    var elemBottom = elemTop + $elem.height();
+
+    return ((elemTop < viewportBottom) && (elemBottom > viewportTop));
+}
+
+        function checkAnimation() {
+    var $elem = $('.timeline-panel');
+
+    // If the animation has already been started
+    if ($elem.hasClass('start')) return;
+    if ($elem.hasClass('start')) return;
+
+    if (isElementInViewport($elem)) {
+        // Start the animation
+        $elem.addClass('start');
+        $elem.addClass('start');
+    }
+}
+
+$(window).scroll(function(){
+    checkAnimation();
+});
+
+      </script>
 <script>
         $(function() {
   $('a[href*=#]').on('click', function(e) {
@@ -183,7 +218,7 @@ oprogramowania oraz stałą administrację i zarządzanie infrastrukturą IT.<br
                         </li>
                         <li class="timeline-inverted wow bounceInUp">
                            <div class="timeline-badge danger"><i class="fa fa-crosshairs"></i></div>
-                           <div class="date-info marginyear" style="margin-left:7px;">
+                           <div class="date-info" style="margin-left:7px;">
                               <span class="day"><b>Nov 2017 -Present</b></span><span class="month"></span><span class="year"></span>
 
                            </div>
@@ -226,7 +261,7 @@ oprogramowania oraz stałą administrację i zarządzanie infrastrukturą IT.<br
               <a id="doswiadczenie1"></a>
                <h2>Technologie</h2>
                <br>
-               <img class="techlogo" src="files/technologie.png"></img>
+
             </header>
       </section>
       </section>

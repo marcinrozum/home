@@ -308,11 +308,7 @@ navbar navbar-expand-lg navbar-light bg-light{
 .date-info .day{
         font-size: 18px;
 }
-.techlogo{
-  filter: grayscale(100%);
-}
 @media (max-width: 768px) {
-
     .timeline:before {
         left: 0.9%;
     }
@@ -479,14 +475,14 @@ navbar navbar-expand-lg navbar-light bg-light{
     opacity: 0;
   }
 }
-.fadeleft{
+.fadeleft.start{
   animation-name: fadeInLeft;
   animation-iteration-count: 1;
   animation-timing-function: ease-in-out;
   animation-duration: 3s;
   animation-fill-mode:forwards;
 }
-.faderight{
+.faderight.start{
   animation-name: fadeInRight;
   animation-iteration-count: 1;
   animation-timing-function: ease-in-out;
