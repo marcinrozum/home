@@ -568,3 +568,28 @@ navbar navbar-expand-lg navbar-light bg-light{
 .ps{
  filter: grayscale(100%);
 }
+.buttonproject{
+  border-radius: 20px;
+  border: grey 1px solid;
+  padding: 5px;
+}
+.linkproject{
+  text-decoration: none;
+color: lightgrey;
+}
+.buttonproject:hover {
+  text-decoration: none;
+  color: lightgrey;
+}
+.linkproject:active{
+  text-decoration: none;
+color: lightgrey;
+}
+.buttonproject:visited{
+  text-decoration: none;
+color: lightgrey;
+}
+.projectscontainer {
+  background-color: black;
+  color:white;
+}
