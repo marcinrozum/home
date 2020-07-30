@@ -125,6 +125,18 @@ $(window).scroll(function(){
         document.body.appendChild(css);
     };
  </script>
+</script>
+<script>
+$(document).ready(function() {
+//Preloader
+preloaderFadeOutTime = 5000;
+function hidePreloader() {
+var preloader = $('#preloader');
+preloader.fadeOut(preloaderFadeOutTime);
+}
+hidePreloader();
+});
+</script>
   </head>
   <body>
   <section class="bg">
@@ -259,11 +271,13 @@ oprogramowania oraz stałą administrację i zarządzanie infrastrukturą IT.<br
             <header class="section-header">
               <br>
               <a id="doswiadczenie1"></a>
-               <h2>Technologie</h2>
+               <h2>Technologie web</h2>
                <br>
-
+               <h3><img class="techlogos" src="files/html-css-js.png" width="300px" alt=""></img> <img class="techlogos" src="files/github.png" width="300px" alt=""></img> <img class="techlogos ps" src="files/ps.png" width="160px" alt=""></img> <img class="techlogos ps" src="files/jira.png" width="100px" alt=""></img> <img class="ps" src="files/bootstrap.png" width="120px" alt=""></img> <img class="ps" src="files/jquery.png" width="120px" alt=""></img></h3>
             </header>
       </section>
       </section>
+      <div id="preloader">
+    <div id="loader"></div>
   </body>
 </html>
